@@ -1,18 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="#E4B19B"
+    android:padding="20dp"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
+    <RadioGroup
+        android:id="@+id/Radio_Group_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/male_Radio_Button_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/maleText"
+            android:textSize="20sp"
+
+
+            />
+        <RadioButton
+            android:id="@+id/female_Radio_Button_Id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/femaleText"
+            android:textSize="20sp"
+
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/showButton_Id"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/showButtonTaxt"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        />
+
+    <TextView
+        android:id="@+id/result_TextView_Id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="20sp"
+
+        />
+
+</LinearLayout>
